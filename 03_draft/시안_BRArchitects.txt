@@ -1,0 +1,76 @@
+*-------------- 헤더 -------------*
+*-------------- 로고 -------------*
+BR Architects
+Verdana, 15px, #000, 자간4px
+*-------------- 메뉴 -------------*
+Projects	About	Contact
+Verdana, 15px, #000, 자간4px
+
+*-------------- 섹션1 -------------*
+BR Architects
+Segoe UI, 36px, #f1f1f1, 자간4px
+
+*-------------- 섹션2 -------------*
+Projects
+Segoe UI, 24px, #000
+
+Summer House
+Verdana, 15px, #fff
+Brick House
+Renovated
+Barn House
+
+*-------------- 섹션3 -------------*
+About
+Segoe UI, 24px, #000
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Verdana, 15px, #000, 줄간1.5
+
+John Doe
+Segoe UI, 24px, #000
+
+CEO & Founder
+Verdana, 15px, #000
+
+Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+Verdana, 15px, #000, 줄간1.5
+
+Contact
+Verdana, 15px, #000
+
+Jane Doe
+Architect
+Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+Contact
+
+Mike Ross
+Architect
+Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+Contact
+
+Dan Star
+Architect
+Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+Contact
+
+*-------------- 섹션4 -------------*
+Contact
+Segoe UI, 24px, #000
+
+Lets get in touch and talk about your next project.
+Verdana, 15px, #000, 줄간1.5
+
+Name
+Email
+Subject
+Comment
+
+SEND MESSAGE
+Verdana, 15px, #fff
+
+*-------------- 푸터 -------------*
+Copyright 2023 HGD. All rights reserved.
+Verdana, 15px, #fff
+
+

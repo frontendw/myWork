@@ -2,6 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&family=Noto+Sans+KR:wght@100;400;700&display=swap');
 
 /* 초기화 */
+* {
+    box-sizing: border-box;
+}
+body {
+    margin:0;
+}
+ul {
+    margin:0;
+    padding:0;
+}
 li {
     list-style: none;
 }
