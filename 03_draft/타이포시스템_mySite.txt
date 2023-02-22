@@ -8,7 +8,7 @@ h3	24px, #777		ABOUT ME, MY WORK, WHERE I WORK
 h4	18px, #777		Im really good at:
 
 a	15px, #777777
-a:hover	15px, #000000
+a:hover	15px, #000000 
 
 button		15px, #000
 button		15px, #fff

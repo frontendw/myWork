@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        /* 초기화 */
+        * {box-sizing: border-box;}
+        body {margin:0; line-height: 1.8;}
+        ul {margin:0; padding:0;}
+        li {list-style: none;}
+        img {width:100%; vertical-align: top;}
+
+        .container {
+            /* 블록레벨요소를 가로 가운데 배치 */
+            width:940px;
+            margin:0 auto;
+        }
+        /* hr {margin:0;} */
+        ul {
+            /* background:yellow; */
+            overflow:auto;
+        }
+        li {
+            float:left; 
+            width:220px;
+            margin-right:20px;
+            margin-bottom:20px; 
+        }
+        li:nth-of-type(4) ~ li {margin-bottom: 0;}
+        li:nth-of-type(4n) {margin-right:0;}
+    </style>
+</head>
+<body>
+    <h1>8장의 이미지를 4장씩 가로 배치</h1>
+    <hr>
+    <div class="container">
+        <ul>
+            <li><img src="https://via.placeholder.com/220x165" alt=""></li>
+            <li><img src="https://via.placeholder.com/220x165" alt=""></li>
+            <li><img src="https://via.placeholder.com/220x165" alt=""></li>
+            <li><img src="https://via.placeholder.com/220x165" alt=""></li>
+            <li><img src="https://via.placeholder.com/220x165" alt=""></li>
+            <li><img src="https://via.placeholder.com/220x165" alt=""></li>
+            <li><img src="https://via.placeholder.com/220x165" alt=""></li>
+            <li><img src="https://via.placeholder.com/220x165" alt=""></li>
+        </ul>
+    </div>
+</body>
+</html>
