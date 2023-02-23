@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        p::before {
+            content:'♥';
+        }
+        p::after {
+            display: inline-block;
+            width:26px;
+            height:16px;
+            content:'';
+            background:url(assets/smile.png) 50% 50%/contain no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <h1>선택기</h1>
+    <h2>의사 요소 선택기</h2>
+    <p>p::before(이전)|Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium repellendus, reprehenderit perferendis ab labore laudantium? Amet vel maiores sit magnam, aut ab unde. Fuga rem similique dolores deserunt consequuntur fugiat.|p::after(이후)</p>
+</body>
+</html>
