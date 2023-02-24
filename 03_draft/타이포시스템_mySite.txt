@@ -29,10 +29,15 @@ address	18px, #777, 줄간격1.8	인천 광역시 남동구
 #000000		글자색
 #666666		푸터 배경색
 
-#f1f1f1		LOAD MORE 버튼
-#000000		SEND MESSAGE 버튼
-#ffffff		To the top 버튼
-#CCCCCC		버튼:hover
+버튼
+#f1f1f1(bg), #000000(color)	LOAD MORE 버튼		138*45
+#000000			SEND MESSAGE 버튼	160*45
+#ffffff(bg), #666666(color)	To the top 버튼		130*45
+#CCCCCC			버튼:hover
+
+이미지
+폼
+#CCCCCC(선) 
  
 
 
