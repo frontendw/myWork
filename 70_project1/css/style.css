@@ -6,11 +6,10 @@
 * {
     box-sizing: border-box;
 }
-body {
+body,h1,h2,h3,h4,p,ul {
     margin:0;
 }
 ul {
-    margin:0;
     padding:0;
 }
 li {
@@ -88,6 +87,14 @@ button:hover {
 .pf3 span {
     font-size: 24px;
 }
+.sns a {
+    font-size: 24px;
+    color: #fff;
+    margin: 3px;
+}
+.sns a:hover {
+    color:#777;
+}
 address {
     font-size: 18px;
 }
@@ -120,7 +127,7 @@ form button span {
     vertical-align: middle;
 }
 
-body * {outline:1px solid lime;}
+/* body * {outline:1px solid lime;} */
 
 /* 헤더 */
 header {
@@ -145,7 +152,8 @@ nav li a:hover {
 .container {
     width: 940px;
     margin: 0 auto;
-}
+    padding: 90px 0;
+}   
 
 /* 패럴렉스 이미지 */
 #sec1 {
@@ -298,6 +306,7 @@ footer {
     background: #616161;
     text-align: center;
     color:#fff;
+    padding-top: 70px;
 }
 footer:hover {
     background: #000;
@@ -315,4 +324,7 @@ footer:hover {
 }
 .toTheTop i {
     margin-right: 5px;
+}
+.sns {
+    margin: 15px 0;
 }
