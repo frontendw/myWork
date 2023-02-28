@@ -120,9 +120,7 @@ form button span {
     vertical-align: middle;
 }
 
-
-
-/* body * {outline:1px solid lime;} */
+body * {outline:1px solid lime;}
 
 /* 헤더 */
 header {
