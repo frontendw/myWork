@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        table, th, td {
+            border:1px solid red;
+            border-spacing: 0;
+        }
+        /* border-spacing와 border-collapse, caption-side은 <table>에만 지정한다. */
+        .table1 {
+            border-width: 2px;
+            border-collapse: collapse;
+            caption-side: bottom;
+        }
+        .table1 td, .table1 th {
+            border-width: 2px;
+        }
+    </style>
+</head>
+<body>
+    <h1>표</h1>
+    <table>
+        <tr>
+            <th scope="row">HTML</th>
+            <td>100점</td>
+        </tr>
+    </table>
+    <hr>
+    <table>
+        <tr>
+            <th scope="col">HTML</th>
+        </tr>
+        <tr>
+            <td>100점</td>
+        </tr>
+    </table>
+    <hr>
+    <table class="table1">
+        <caption>1학년 성적표</caption>
+        <colgroup>
+            <col>
+            <col span="2">
+            <col>
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col">과목</th>
+                <th scope="col">HTML</th>
+                <th scope="col">CSS</th>
+                <th scope="col">JS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1학기</td>
+                <td>100점</td>
+                <td>100점</td>
+                <td>90점</td>
+            </tr>
+            <tr>
+                <td>2학기</td>
+                <td>90점</td>
+                <td>80점</td>
+                <td>100점</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>평균</td>
+                <td>95점</td>
+                <td>90점</td>
+                <td>95점</td>
+            </tr>
+        </tfoot>
+    </table>
+    <hr>
+    <table>
+        <tr>
+            <th scope="row">과목</th>
+            <td>1학기</td>
+            <td>2학기</td>
+            <td>평균</td>
+        </tr>
+        <tr>
+            <th scope="row">HTML</th>
+            <td>100점</td>
+            <td>90점</td>
+            <td>95점</td>
+        </tr>
+        <tr>
+            <th scope="row">CSS</th>
+            <td>100점</td>
+            <td>80점</td>
+            <td>90점</td>
+        </tr>
+        <tr>
+            <th scope="row">JS</th>
+            <td>90점</td>
+            <td>100점</td>
+            <td>95점</td>
+        </tr>
+    </table>
+    <hr>
+    <table>
+        <tr>
+            <!-- 두 개의 열을 병합 -->
+            <td colspan="2">1</td>
+        </tr>
+    </table>
+    <hr>
+    <table>
+        <tr>
+            <!-- 두 개의 행을 병합 -->
+            <td rowspan="2">1</td>
+        </tr>
+    </table>
+    <hr>
+    <table>
+        <tr>
+            <th scope="col">월</th>
+            <th colspan="2" scope="colgroup">화</th>
+            <th scope="col">목</th>
+        </tr>
+        <tr>
+            <td rowspan="2">HTML</td>
+            <td colspan="2">Illustrator</td>
+            <td rowspan="3">Figma</td>
+        </tr>
+        <tr>
+            <td colspan="2" rowspan="2">Photoshop</td>
+        </tr>
+        <tr>
+            <td rowspan="2">CSS</td>
+        </tr>
+        <tr>
+            <td colspan="3">JavaScript</td>
+        </tr>
+    </table>
+</body>
+</html>
