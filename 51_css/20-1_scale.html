@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML+CSS</title>
+    <style>
+        .wrap {
+            margin: 20px;
+            border:1px solid black;
+            /* perspective: 1000px; */
+        }
+        .trf {
+            display:inline-block;
+            width:100px;
+            height:100px;
+            background: red;
+            transition: .5s;
+        }
+        .wrap:hover .trftx {
+            /* transform: scaleX(w); */
+            transform: scaleX(1.2);
+        }
+        .wrap:hover .trfty {
+            /* transform: scaleY(h); */
+            transform: scaleY(1.2);
+        }
+        .trftz {
+            transform: perspective(1000px) scaleZ(1) translateZ(0px);
+        }
+        .wrap:hover .trftz {
+            /* 원근감(perspective), translate()과 함께 사용해야 한다. */
+            /* transform: scaleZ(숫자); */
+            transform: perspective(1000px) scaleZ(2) translateZ(100px);
+        }
+        .trftd {
+            transform: perspective(1000px) scale3d(1,1,1);
+        }
+        .wrap:hover .trftd {
+            /* transform: scale3d(숫자,숫자,숫자); */
+            transform: perspective(1000px) scale3d(1.2,1.2,1.2);
+        }
+        .wrap:hover .trft {
+            /* transform: scale(w[, h]); */
+            /* translate는 하나의 인수만 쓸 경우 좌우 방향 이동 */
+            /* scale은 하나의 인수만 쓸 경우 가로/세로 비율 유지 크기 변경 */
+            /* transform: scale(1.2, 1.2); */
+            transform: scale(1.2);
+        }
+
+        /* ----------------------------------------------------- */
+        .move {
+            width:200px;
+            background: yellow;
+            overflow: hidden;
+            padding: 10px 20px;
+        }
+        .move .bg {
+            float:left;
+            transition: .3s ease-out;
+            transform: scaleY(20px);
+        }
+        .move:hover .bg {
+            transform: scaleY(10px);
+        }
+        .move .txt {float:right;}
+    </style>
+</head>
+<body>
+    <h1>변환</h1>
+    <h2>이동</h2>
+    <div class="wrap">
+        <span class="trf trftx">scaleX</span>transform
+    </div>
+    <div class="wrap">
+        <span class="trf trfty">scaleY</span>transform
+    </div>
+    <div class="wrap">
+        <span class="trf trftz">scaleZ</span>transform
+    </div>
+    <div class="wrap">
+        <span class="trf trftd">scale3d</span>transform
+    </div>
+    <div class="wrap">
+        <span class="trf trft">scale</span>transform
+    </div>
+    <hr>
+    <div class="move">
+        <div class="bg"><img src="assets/inthree/main-visual-dot-01.png" alt=""></div>
+        <div class="txt">
+            <h3>가이드맵</h3>
+            <p>서울랜드를 한눈에<br> 둘러보세요!</p>
+        </div>
+    </div>
+</body>
+</html>

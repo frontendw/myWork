@@ -7,8 +7,8 @@ h1	36px, #fff, letter-spacing:4px 		섹션1의 메인타이틀
 h2	24px				섹션2,3,4의 제목
 h3	18px				섹션3의 하위 제목
 
-.logo	15px, #000, letter-spacing:4px	로고
-a	15px, #000, letter-spacing:4px	GNB
+.logo	15px, #000			로고
+a	15px, #000, letter-spacing:4px		GNB
 .copy	#fff				Copyright
 body	15px, #000, line-height:1.5
 
@@ -17,8 +17,6 @@ button		15px, #000, bg:#f1f1f1	Contact
 button:hover	bg:#ccc
 button		15px, #fff, bg:#000		SEND MESSAGE
 button:hover	#000, bg:#ccc
-
-
 
 
 컬러 시스템
