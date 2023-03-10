@@ -56,6 +56,7 @@ nav a {
 
 /*----------------- header ------------------*/
 header {
+    display: none;
     /* fixed와 absolute로 지정하면 width가 콘텐츠 크기로 지정된다. */
     position: fixed;
     top:0px;
@@ -84,7 +85,20 @@ nav li {
     float:left;
 }
 
-/* 섹션1 */
+/* section1 */
+#section1 div {
+    position: relative;
+    width:1484px;
+    /* 블록레벨요소의 가로 가운데 배치 */
+    margin: 0 auto;
+}
+.mainTit {
+    z-index: 1;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}
 /* 섹션2 */
 /* 섹션3 */
 /* 섹션4 */
