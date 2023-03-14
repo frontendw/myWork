@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-rotate=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML+CSS</title>
     <style>
+        .container {
+            overflow:hidden;
+        }
         .wrap {
+            float:left;
             margin: 20px;
             border:1px solid black;
             perspective: 1000px;
@@ -36,7 +40,7 @@
         }
         .wrap:hover .trfr {
             /* transform: rotate(숫자deg); */
-            transform: rotate(90deg);
+            transform: rotate(45deg);
         }
         .wrap .trfro {
             transform-origin: 0% 0%;
@@ -51,31 +55,82 @@
             perspective: 200px;
             perspective-origin: right bottom;
         }
+
+        .trfo1 {
+            /* transform-origin: center center; */
+            transform-origin: 50% 50%;
+        }
+        .trfo2 {
+            /* transform-origin: left top; */
+            transform-origin: 0 0;
+        }
+        .trfo3 {
+            /* transform-origin: x축 y축; */
+            /* transform-origin: right top; */
+            /* transform-origin: top right; */
+            transform-origin:100% 0;
+        }
+        .trfo4 {
+            /* transform-origin: right bottom; */
+            transform-origin: 100% 100%;
+        }
+        .trfo5 {
+            /* transform-origin: left bottom; */
+            transform-origin: 0 100%;
+        }
+        .trfo6 {
+            /* width:100px, height:100px; */
+            transform-origin: 20% 30%;
+            transform-origin: 20px 30px;
+        }
     </style>
 </head>
 <body>
     <h1>변환</h1>
-    <h2>이동</h2>
-    <div class="wrap">
-        <span class="trf trfrx">rotateX</span>transform
+    <h2>회전</h2>
+    <div class="container">
+        <div class="wrap">
+            <span class="trf trfrx">rotateX</span>transform
+        </div>
+        <div class="wrap">
+            <span class="trf trfry">rotateY</span>transform
+        </div>
+        <div class="wrap">
+            <span class="trf trfrz">rotateZ</span>transform
+        </div>
+        <div class="wrap">
+            <span class="trf trfrd">rotate3d</span>transform
+        </div>
+        <div class="wrap">
+            <span class="trf trfr">rotate</span>transform
+        </div>
+        <div class="wrap">
+            <span class="trf trfro">rotate</span>transform
+        </div>
+        <div class="wrap">
+            <span class="trf trfro">rotate</span>transform
+        </div>
     </div>
-    <div class="wrap">
-        <span class="trf trfry">rotateY</span>transform
-    </div>
-    <div class="wrap">
-        <span class="trf trfrz">rotateZ</span>transform
-    </div>
-    <div class="wrap">
-        <span class="trf trfrd">rotate3d</span>transform
-    </div>
-    <div class="wrap">
-        <span class="trf trfr">rotate</span>transform
-    </div>
-    <div class="wrap">
-        <span class="trf trfro">rotate</span>transform
-    </div>
-    <div class="wrap">
-        <span class="trf trfro">rotate</span>transform
+    <hr>
+    <div class="container">
+        <div class="wrap">
+            <span class="trf trfr trfo1">rotate</span>transform
+        </div>
+        <div class="wrap">
+            <span class="trf trfr trfo2">rotate</span>transform
+        </div>
+        <div class="wrap">
+            <span class="trf trfr trfo3">rotate</span>transform
+        </div>
+        <div class="wrap">
+            <span class="trf trfr trfo4">rotate</span>transform
+        </div>
+        <div class="wrap">
+            <span class="trf trfr trfo5">rotate</span>transform
+        </div>
+        <div class="wrap">
+            <span class="trf trfr trfo6">rotate</span>transform
+        </div>
     </div>
 </body>
 </html>
